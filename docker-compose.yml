@@ -1,0 +1,52 @@
+version: '2'
+services:
+  web:
+    build: .
+    ports:
+      - 9080:80
+    volumes:
+      - .:/var/www/html
+      - vendor-volume:/var/www/html/vendor
+      - core-volume:/var/www/html/web/core
+      - libraries-volume:/var/www/html/web/libraries
+      - files-volume:/var/www/html/web/sites/default/files
+      - styles-volume:/var/www/html/web/sites/default/files/styles
+      - sync-volume:/var/www/html/web/sites/default/sync
+      - modules-contrib-volume:/var/www/html/web/modules/contrib
+      - profiles-contrib-volume:/var/www/html/web/profiles/contrib
+      - themes-contrib-volume:/var/www/html/web/themes/contrib
+      - drush-contrib-volume:/var/www/html/web/drush/contrib
+    links:
+      - db
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_ADDR: db
+    restart: always
+
+  db:
+    image: mysql:8
+    volumes:
+      - db-volume:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_ALLOW_EMPTY_PASSWORD: "no"
+    restart: always
+
+volumes:
+  vendor-volume:
+  core-volume:
+  libraries-volume:
+  files-volume:
+  styles-volume:
+  sync-volume:
+  modules-contrib-volume:
+  profiles-contrib-volume:
+  themes-contrib-volume:
+  drush-contrib-volume:
+  db-volume:

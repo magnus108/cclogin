@@ -1,0 +1,44 @@
+{
+    "name": "root/cclogin",
+    "type": "project",
+    "minimum-stability" : "dev",
+    "prefer-stable" : true,
+    "require": {
+        "composer/installers": "^1.2",
+        "drupal/core": "^8.3",
+        "drush/drush": "^8.1",
+        "league/oauth2-server": "^5.1",
+        "drupal/redirect": "^1.0@alpha",
+        "drupal/metatag": "^1.0",
+        "drupal/yoast_seo": "^1.2",
+        "drupal/diff": "^1.0@RC",
+        "drupal/linkit": "^4.3",
+        "drupal/devel": "^1.0@RC",
+        "drupal/advagg": "^2.4"
+    },
+    "authors": [
+        {
+            "name": "Magnus Møller",
+            "email": "magnus108@me.com"
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "web/drush/contrib/{$name}": ["type:drupal-drush"]
+        }
+    },
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    },
+    "require-dev": {
+        "drupal/seo_checklist": "^4.0"
+    }
+}
