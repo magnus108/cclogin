@@ -4,8 +4,6 @@ services:
     build: .
     ports:
       - 9080:80
-    volumes_from:
-      - web_data
     links:
       - db
     environment:
@@ -14,9 +12,6 @@ services:
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_ADDR: db
-    restart: always
-  web_data:
-    build: .
     volumes:
       - .:/var/www/html
       - vendor-volume:/var/www/html/vendor
