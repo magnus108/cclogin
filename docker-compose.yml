@@ -4,6 +4,19 @@ services:
     build: .
     ports:
       - 9080:80
+    volumes_from:
+      - web_data
+    links:
+      - db
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_ADDR: db
+    restart: always
+  web_data:
+    build: .
     volumes:
       - .:/var/www/html
       - vendor-volume:/var/www/html/vendor
@@ -16,16 +29,7 @@ services:
       - profiles-contrib-volume:/var/www/html/web/profiles/contrib
       - themes-contrib-volume:/var/www/html/web/themes/contrib
       - drush-contrib-volume:/var/www/html/web/drush/contrib
-    links:
-      - db
-    environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-      MYSQL_USER: ${MYSQL_USER}
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
-      MYSQL_DATABASE: ${MYSQL_DATABASE}
-      MYSQL_ADDR: db
     restart: always
-
   db:
     image: mysql:8
     volumes:
