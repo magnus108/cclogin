@@ -1,7 +1,9 @@
 uuid: 27e83087-69f8-41e0-9330-2cdebd7f0a05
 langcode: en
-status: false
+status: true
 dependencies:
+  module:
+    - user
   theme:
     - bootstrap
 _core:
@@ -19,4 +21,11 @@ settings:
   label_display: '0'
   primary: true
   secondary: true
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
