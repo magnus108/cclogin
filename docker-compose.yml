@@ -12,11 +12,6 @@ services:
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_ADDR: db
-    volumes_from:
-      - web_data
-    restart: always
-  web_data:
-    build: .
     volumes:
       - .:/var/www/html
       - vendor-volume:/var/www/html/vendor
