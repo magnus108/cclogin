@@ -1,4 +1,4 @@
-uuid: 3d4b735e-a938-4e9a-8a08-9eb116c2fe73
+uuid: f8b15046-ca56-42c0-9a43-268ceed9e088
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
 id: bootstrap_footer
 theme: bootstrap
 region: footer
-weight: -5
+weight: 0
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

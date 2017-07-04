@@ -1,4 +1,4 @@
-uuid: 4fe41050-8efb-4a7c-bcc4-e4a27c49ddad
+uuid: a5f51601-e17f-4ac7-a2e2-bd962dfb1595
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
 id: bootstrap_account_menu
 theme: bootstrap
 region: navigation_collapsible
-weight: -6
+weight: -7
 provider: null
 plugin: 'system_menu_block:account'
 settings:
