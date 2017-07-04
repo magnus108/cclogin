@@ -14,7 +14,8 @@
         "drupal/diff": "^1.0@RC",
         "drupal/linkit": "^4.3",
         "drupal/devel": "^1.0@RC",
-        "drupal/advagg": "^2.4"
+        "drupal/advagg": "^2.4",
+        "drupal/bootstrap": "^3.5"
     },
     "authors": [
         {
