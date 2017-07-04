@@ -15,7 +15,6 @@
         "drupal/linkit": "^4.3",
         "drupal/devel": "^1.0@RC",
         "drupal/advagg": "^2.4",
-        "drupal/bootstrap": "^3.5",
         "drupal/config_split": "^1.0@beta"
     },
     "authors": [
