@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.group.body
+    - field.field.node.group.field_image
     - field.field.node.group.field_user
     - node.type.group
   module:
+    - image
     - text
     - user
 id: node.group.default
@@ -20,6 +22,15 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 2
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
     region: content
   field_user:
     weight: 1

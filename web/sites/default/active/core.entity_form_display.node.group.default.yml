@@ -4,9 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.group.body
+    - field.field.node.group.field_image
     - field.field.node.group.field_user
+    - image.style.thumbnail
     - node.type.group
   module:
+    - image
     - text
 id: node.group.default
 targetEntityType: node
@@ -21,6 +24,14 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_user:
     weight: 2
