@@ -22,14 +22,15 @@ RUN { \
 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 
 
-ENV HOME=/var/www/html
-
 # install dependancies
 RUN apt-get update && apt-get install -y curl wget git mysql-client libmagickwand-dev imagemagick
 RUN pecl install imagick && docker-php-ext-enable imagick
 RUN wget -qO- https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# add files and permissions
+
+USER www-data
+ENV HOME=/var/www/html
+
 COPY composer.json composer.lock $HOME/
 RUN composer install
 
