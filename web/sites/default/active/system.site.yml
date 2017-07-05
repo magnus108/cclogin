@@ -1,0 +1,14 @@
+uuid: 73c7392f-ccbf-472c-9d43-5c31841c3852
+name: cclogin
+mail: cclogin@cclogin.dk
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
