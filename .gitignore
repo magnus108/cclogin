@@ -1,3 +1,4 @@
+.drush/
 vendor/
-web/core
-web/modules/contrib
+web/core/
+web/modules/contrib/
