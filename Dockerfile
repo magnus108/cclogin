@@ -35,3 +35,5 @@ COPY composer.json composer.lock $HOME/
 RUN composer install
 
 COPY web $HOME/
+
+USER root
