@@ -10,7 +10,6 @@
         "drupal/redirect": "^1.0@alpha",
         "drupal/metatag": "^1.0",
         "drupal/yoast_seo": "^1.2",
-        "drupal/diff": "^1.0@RC",
         "drupal/linkit": "^4.3",
         "drupal/devel": "^1.0@RC",
         "drupal/advagg": "^2.4"

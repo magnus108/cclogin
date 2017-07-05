@@ -255,6 +255,7 @@ $databases['default']['default'] = array (
  */
 $config_directories = array(
   CONFIG_SYNC_DIRECTORY => 'sites/default/sync',
+  CONFIG_ACTIVE_DIRECTORY => 'sites/default/active'
 );
 
 /**
@@ -620,7 +621,7 @@ if ($settings['hash_salt']) {
  *   override in a services.yml file in the same directory as settings.php
  *   (definitions in this file will override service definition defaults).
  */
-# $settings['bootstrap_config_storage'] = array('Drupal\Core\Config\BootstrapConfigStorageFactory', 'getFileStorage');
+$settings['bootstrap_config_storage'] = array('Drupal\Core\Config\BootstrapConfigStorageFactory', 'getFileStorage');
 
 /**
  * Configuration overrides.

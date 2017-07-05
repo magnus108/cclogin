@@ -1,3 +1,11 @@
+services:
+  config.storage:
+    class: Drupal\Core\Config\CachedStorage
+    arguments: ['@config.storage.active', '@cache.config']
+  config.storage.active:
+    class: Drupal\Core\Config\FileStorage
+    factory: Drupal\Core\Config\FileStorageFactory::getActive
+
 parameters:
   session.storage.options:
     # Default ini options for sessions.
