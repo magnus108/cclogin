@@ -1,0 +1,14 @@
+uuid: afc613c2-94bf-4755-8425-ba6cdad38ad3
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - cclogin@cclogin.dk
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''
