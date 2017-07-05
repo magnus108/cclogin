@@ -104,4 +104,4 @@ $config['system.performance']['js']['preprocess'] = FALSE;
  * user pulling in the changes won't have permissions to modify files in the
  * directory.
  */
-# $settings['skip_permissions_hardening'] = FALSE;
+# $settings['skip_permissions_hardening'] = TRUE;
