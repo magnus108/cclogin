@@ -30,7 +30,7 @@ RUN pecl install imagick && docker-php-ext-enable imagick
 RUN wget -qO- https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # add files and permissions
-COPY composer.json composer.lock $HOME/
+COPY composer.lock $HOME/
 RUN composer install
 
 COPY web $HOME/web
