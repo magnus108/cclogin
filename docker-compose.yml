@@ -19,7 +19,6 @@ services:
       - libraries-volume:/var/www/html/web/libraries
       - files-volume:/var/www/html/web/sites/default/files
       - styles-volume:/var/www/html/web/sites/default/files/styles
-      - sync-volume:/var/www/html/web/sites/default/sync
       - modules-contrib-volume:/var/www/html/web/modules/contrib
       - profiles-contrib-volume:/var/www/html/web/profiles/contrib
       - themes-contrib-volume:/var/www/html/web/themes/contrib
@@ -43,7 +42,6 @@ volumes:
   libraries-volume:
   files-volume:
   styles-volume:
-  sync-volume:
   modules-contrib-volume:
   profiles-contrib-volume:
   themes-contrib-volume:

@@ -7,15 +7,13 @@
         "composer/installers": "^1.2",
         "drupal/core": "^8.3",
         "drush/drush": "^8.1",
-        "league/oauth2-server": "^5.1",
         "drupal/redirect": "^1.0@alpha",
         "drupal/metatag": "^1.0",
         "drupal/yoast_seo": "^1.2",
         "drupal/diff": "^1.0@RC",
         "drupal/linkit": "^4.3",
         "drupal/devel": "^1.0@RC",
-        "drupal/advagg": "^2.4",
-        "drupal/config_split": "^1.0@beta"
+        "drupal/advagg": "^2.4"
     },
     "authors": [
         {
