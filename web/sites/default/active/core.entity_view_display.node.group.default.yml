@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.group.body
     - field.field.node.group.field_image
     - field.field.node.group.field_user
+    - image.style.medium
     - node.type.group
   module:
     - image
@@ -27,7 +28,7 @@ content:
     weight: 2
     label: above
     settings:
-      image_style: ''
+      image_style: medium
       image_link: ''
     third_party_settings: {  }
     type: image
