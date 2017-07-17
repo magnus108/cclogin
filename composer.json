@@ -12,7 +12,8 @@
         "drupal/yoast_seo": "^1.2",
         "drupal/linkit": "^4.3",
         "drupal/devel": "^1.0@RC",
-        "drupal/advagg": "^2.4"
+        "drupal/advagg": "^2.4",
+        "drupal/config_installer": "^1.4"
     },
     "authors": [
         {
