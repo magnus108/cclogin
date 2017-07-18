@@ -108,8 +108,8 @@ blacklist:
   - field.field.node.article.field_tags
   - field.field.node.group.body
   - field.field.node.group.field_image
-  - field.field.node.group.field_user
   - field.field.node.page.body
+  - field.field.user.user.field_group
   - field.field.user.user.user_picture
   - field.settings
   - field.storage.block_content.body
@@ -118,7 +118,7 @@ blacklist:
   - field.storage.node.comment
   - field.storage.node.field_image
   - field.storage.node.field_tags
-  - field.storage.node.field_user
+  - field.storage.user.field_group
   - field.storage.user.user_picture
   - field_ui.settings
   - file.settings
@@ -141,6 +141,7 @@ blacklist:
   - rdf.mapping.node.page
   - rdf.mapping.taxonomy_term.tags
   - rdf.mapping.user.user
+  - reference_access.config
   - search.page.node_search
   - search.page.user_search
   - search.settings
@@ -203,10 +204,12 @@ blacklist:
   - views.view.frontpage
   - views.view.glossary
   - views.view.taxonomy_term
-  - views.view.user
   - views.view.user_admin_people
   - views.view.who_s_new
   - views.view.who_s_online
+  - field.field.node.group.field_user
+  - field.storage.node.field_user
+  - views.view.user
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

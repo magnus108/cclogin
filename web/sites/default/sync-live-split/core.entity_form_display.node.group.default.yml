@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.group.body
     - field.field.node.group.field_image
-    - field.field.node.group.field_user
     - image.style.thumbnail
     - node.type.group
   module:
@@ -32,15 +31,6 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
-    region: content
-  field_user:
-    weight: 2
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
     region: content
   title:
     type: string_textfield

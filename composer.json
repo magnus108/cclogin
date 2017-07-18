@@ -14,7 +14,8 @@
         "drupal/devel": "^1.0@RC",
         "drupal/advagg": "^2.4",
         "drupal/config_installer": "^1.4",
-        "drupal/config_split": "^1.0@beta"
+        "drupal/config_split": "^1.0@beta",
+        "drupal/reference_access": "^1.0@alpha"
     },
     "authors": [
         {
