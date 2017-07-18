@@ -1,7 +1,3 @@
 .bash_history
 .drush/
 .composer/
-vendor/
-web/core/
-web/modules/contrib/
-web/sites/default/files/
