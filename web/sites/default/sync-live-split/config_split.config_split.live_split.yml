@@ -96,6 +96,8 @@ blacklist:
   - core.extension
   - core.menu.static_menu_link_overrides
   - dblog.settings
+  - devel.settings
+  - devel.toolbar.settings
   - editor.editor.basic_html
   - editor.editor.full_html
   - field.field.block_content.basic.body
@@ -171,6 +173,7 @@ blacklist:
   - system.maintenance
   - system.menu.account
   - system.menu.admin
+  - system.menu.devel
   - system.menu.footer
   - system.menu.main
   - system.menu.tools
