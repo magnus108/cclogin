@@ -17,6 +17,7 @@ services:
       - vendor-volume:/var/www/html/vendor
       - core-volume:/var/www/html/web/core
       - libraries-volume:/var/www/html/web/libraries
+      - sync-volume:/var/www/html/web/sites/default/sync
       - modules-contrib-volume:/var/www/html/web/modules/contrib
       - profiles-contrib-volume:/var/www/html/web/profiles/contrib
       - themes-contrib-volume:/var/www/html/web/themes/contrib
@@ -38,6 +39,7 @@ volumes:
   vendor-volume:
   core-volume:
   libraries-volume:
+  sync-volume:
   modules-contrib-volume:
   profiles-contrib-volume:
   themes-contrib-volume:
