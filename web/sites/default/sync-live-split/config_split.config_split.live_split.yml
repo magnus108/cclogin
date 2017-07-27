@@ -154,6 +154,9 @@ blacklist:
   - rdf.mapping.node.page
   - rdf.mapping.taxonomy_term.tags
   - rdf.mapping.user.user
+  - redirect.settings
+  - redirect_404.settings
+  - redirect_domain.domains
   - reference_access.config
   - search.page.node_search
   - search.page.user_search
@@ -173,6 +176,7 @@ blacklist:
   - system.action.node_unpublish_action
   - system.action.pathauto_update_alias_node
   - system.action.pathauto_update_alias_user
+  - system.action.redirect_delete_action
   - system.action.user_add_role_action.administrator
   - system.action.user_block_user_action
   - system.action.user_cancel_user_action
@@ -218,6 +222,8 @@ blacklist:
   - views.view.files
   - views.view.frontpage
   - views.view.glossary
+  - views.view.redirect
+  - views.view.redirect_404
   - views.view.taxonomy_term
   - views.view.user
   - views.view.user_admin_people

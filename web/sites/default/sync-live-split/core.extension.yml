@@ -34,6 +34,9 @@ module:
   path: 0
   quickedit: 0
   rdf: 0
+  redirect: 0
+  redirect_404: 0
+  redirect_domain: 0
   reference_access: 0
   search: 0
   shortcut: 0
