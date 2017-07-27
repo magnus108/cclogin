@@ -15,7 +15,8 @@
         "drupal/advagg": "^2.4",
         "drupal/config_installer": "^1.4",
         "drupal/config_split": "^1.0@beta",
-        "drupal/reference_access": "^1.0@alpha"
+        "drupal/reference_access": "^1.0@alpha",
+        "drupal/pathauto": "^1.0"
     },
     "authors": [
         {

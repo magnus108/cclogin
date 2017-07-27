@@ -83,16 +83,27 @@ blacklist:
   - core.entity_view_display.node.page.teaser
   - core.entity_view_display.user.user.compact
   - core.entity_view_display.user.user.default
+  - core.entity_view_mode.block.token
   - core.entity_view_mode.block_content.full
+  - core.entity_view_mode.block_content.token
   - core.entity_view_mode.comment.full
+  - core.entity_view_mode.comment.token
+  - core.entity_view_mode.contact_message.token
+  - core.entity_view_mode.file.token
+  - core.entity_view_mode.menu_link_content.token
   - core.entity_view_mode.node.full
   - core.entity_view_mode.node.rss
   - core.entity_view_mode.node.search_index
   - core.entity_view_mode.node.search_result
   - core.entity_view_mode.node.teaser
+  - core.entity_view_mode.node.token
+  - core.entity_view_mode.shortcut.token
   - core.entity_view_mode.taxonomy_term.full
+  - core.entity_view_mode.taxonomy_term.token
+  - core.entity_view_mode.tour.token
   - core.entity_view_mode.user.compact
   - core.entity_view_mode.user.full
+  - core.entity_view_mode.user.token
   - core.extension
   - core.menu.static_menu_link_overrides
   - dblog.settings
@@ -136,6 +147,8 @@ blacklist:
   - node.type.article
   - node.type.group
   - node.type.page
+  - pathauto.pattern.group
+  - pathauto.settings
   - rdf.mapping.comment.comment
   - rdf.mapping.node.article
   - rdf.mapping.node.page
@@ -158,6 +171,8 @@ blacklist:
   - system.action.node_save_action
   - system.action.node_unpromote_action
   - system.action.node_unpublish_action
+  - system.action.pathauto_update_alias_node
+  - system.action.pathauto_update_alias_user
   - system.action.user_add_role_action.administrator
   - system.action.user_block_user_action
   - system.action.user_cancel_user_action
@@ -204,12 +219,12 @@ blacklist:
   - views.view.frontpage
   - views.view.glossary
   - views.view.taxonomy_term
+  - views.view.user
   - views.view.user_admin_people
   - views.view.who_s_new
   - views.view.who_s_online
   - field.field.node.group.field_user
   - field.storage.node.field_user
-  - views.view.user
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
