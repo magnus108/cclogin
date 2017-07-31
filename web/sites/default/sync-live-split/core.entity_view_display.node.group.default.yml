@@ -49,6 +49,13 @@ third_party_settings:
       main:
         - field_image
         - body
+        - 'dynamic_block_field:node-users'
+    fields:
+      'dynamic_block_field:node-users':
+        plugin_id: 'dynamic_block_field:node-users'
+        weight: 2
+        label: hidden
+        formatter: default
 id: node.group.default
 targetEntityType: node
 bundle: group
