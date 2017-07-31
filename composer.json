@@ -18,7 +18,7 @@
         "drupal/reference_access": "^1.0@alpha",
         "drupal/pathauto": "^1.0",
         "drupal/ds": "^3.1",
-        "drupal/bootstrap_layouts": "^4.1"
+        "drupal/bootstrap_layouts": "5.x-dev"
     },
     "authors": [
         {
