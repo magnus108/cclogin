@@ -4,11 +4,61 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_group
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
+    - ds
     - image
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col_stacked
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          top:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+          bottom:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      top:
+        - user_picture
+      main:
+        - username
+    fields:
+      username:
+        plugin_id: username
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h2
+          class: ''
+          link: false
 _core:
   default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
 id: user.user.compact
@@ -19,7 +69,7 @@ content:
   user_picture:
     type: image
     weight: 0
-    region: content
+    region: top
     settings:
       image_style: thumbnail
       image_link: content

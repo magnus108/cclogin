@@ -2,6 +2,8 @@ uuid: ea0395ce-97b2-4dfc-98e7-0f4d58f83a0f
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.user.compact
   module:
     - ds
     - node
@@ -71,6 +73,21 @@ display:
         type: default
       row:
         type: 'ds_entity:user'
+        options:
+          relationship: none
+          view_mode: compact
+          alternating_fieldset:
+            alternating: false
+            allpages: false
+            item_0: default
+            item_1: default
+            item_2: default
+            item_3: default
+            item_4: default
+          grouping_fieldset:
+            group: false
+          advanced_fieldset:
+            advanced: false
       fields:
         name:
           id: name
