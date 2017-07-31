@@ -92,6 +92,7 @@ blacklist:
   - core.entity_view_mode.file.token
   - core.entity_view_mode.menu_link_content.token
   - core.entity_view_mode.node.full
+  - core.entity_view_mode.node.revision
   - core.entity_view_mode.node.rss
   - core.entity_view_mode.node.search_index
   - core.entity_view_mode.node.search_result
@@ -109,6 +110,9 @@ blacklist:
   - dblog.settings
   - devel.settings
   - devel.toolbar.settings
+  - ds.field.users
+  - ds.settings
+  - ds_extras.settings
   - editor.editor.basic_html
   - editor.editor.full_html
   - field.field.block_content.basic.body
@@ -226,6 +230,7 @@ blacklist:
   - views.view.redirect_404
   - views.view.taxonomy_term
   - views.view.user
+  - views.view.users_in_group
   - views.view.user_admin_people
   - views.view.who_s_new
   - views.view.who_s_online
