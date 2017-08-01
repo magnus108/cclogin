@@ -7,6 +7,7 @@ dependencies:
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
+    - ds
     - image
     - user
 third_party_settings:
@@ -45,9 +46,14 @@ third_party_settings:
     regions:
       top:
         - user_picture
-      main:
-        - member_for
+        - username
         - field_group
+    fields:
+      username:
+        plugin_id: username
+        weight: 1
+        label: hidden
+        formatter: default
 _core:
   default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
 id: user.user.default
@@ -56,23 +62,21 @@ bundle: user
 mode: default
 content:
   field_group:
-    weight: 7
+    weight: 2
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
-  member_for:
-    weight: 5
-    region: content
+    region: top
   user_picture:
     type: image
     weight: 0
-    region: content
+    region: top
     settings:
       image_style: thumbnail
       image_link: content
     third_party_settings: {  }
     label: hidden
-hidden: {  }
+hidden:
+  member_for: true
