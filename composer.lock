@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "19b4af02faf2097e711bd6cb3422b62e",
+    "content-hash": "0f6061121a47e01433da49ce7fa5ba16",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -768,6 +768,53 @@
             "time": "2014-09-09T13:34:57+00:00"
         },
         {
+            "name": "drupal/acl",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/acl",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/acl-8.x-1.0-alpha1.zip",
+                "reference": null,
+                "shasum": "2cb076c451ab99beeb7433272ca56aea4bf48430"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1445215139"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "merlinofchaos",
+                    "homepage": "https://www.drupal.org/user/26979"
+                },
+                {
+                    "name": "salvis",
+                    "homepage": "https://www.drupal.org/user/82964"
+                }
+            ],
+            "description": "Access control list API. Has no features on its own.",
+            "homepage": "https://www.drupal.org/project/acl",
+            "support": {
+                "source": "http://cgit.drupalcode.org/acl"
+            }
+        },
+        {
             "name": "drupal/advagg",
             "version": "2.4.0",
             "source": {
@@ -1062,6 +1109,52 @@
                 "source": "http://cgit.drupalcode.org/config_split",
                 "issues": "https://www.drupal.org/project/issues/config_split"
             }
+        },
+        {
+            "name": "drupal/content_access",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/content_access",
+                "reference": "0e05c3ddde14716a8ea4bbb605b631a7d0470e56"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1472027039"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "fago",
+                    "homepage": "https://www.drupal.org/user/16747"
+                },
+                {
+                    "name": "good_man",
+                    "homepage": "https://www.drupal.org/user/265439"
+                },
+                {
+                    "name": "id.tarzanych",
+                    "homepage": "https://www.drupal.org/user/2776543"
+                }
+            ],
+            "description": "Provides flexible content access control.",
+            "homepage": "https://www.drupal.org/project/content_access",
+            "support": {
+                "source": "http://cgit.drupalcode.org/content_access"
+            },
+            "time": "2017-05-12 05:22:07"
         },
         {
             "name": "drupal/core",
@@ -1686,53 +1779,6 @@
             "homepage": "https://www.drupal.org/project/redirect",
             "support": {
                 "source": "http://cgit.drupalcode.org/redirect"
-            }
-        },
-        {
-            "name": "drupal/reference_access",
-            "version": "1.0.0-alpha1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/reference_access",
-                "reference": "8.x-1.0-alpha1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/reference_access-8.x-1.0-alpha1.zip",
-                "reference": "8.x-1.0-alpha1",
-                "shasum": "9596eac3856c06a0bf2fbfd5a00af236b4d66ed2"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-alpha1",
-                    "datestamp": "1491724383"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "droces",
-                    "homepage": "https://www.drupal.org/user/2996575"
-                }
-            ],
-            "description": "Allows restricting access to content unless a user references that content.",
-            "homepage": "https://www.drupal.org/project/reference_access",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/reference_access",
-                "issues": "https://www.drupal.org/project/issues/reference_access"
             }
         },
         {
@@ -4677,6 +4723,53 @@
             }
         },
         {
+            "name": "drupal/reference_access",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/reference_access",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/reference_access-8.x-1.0-alpha1.zip",
+                "reference": "8.x-1.0-alpha1",
+                "shasum": "9596eac3856c06a0bf2fbfd5a00af236b4d66ed2"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1491724383"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "droces",
+                    "homepage": "https://www.drupal.org/user/2996575"
+                }
+            ],
+            "description": "Allows restricting access to content unless a user references that content.",
+            "homepage": "https://www.drupal.org/project/reference_access",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/reference_access",
+                "issues": "https://www.drupal.org/project/issues/reference_access"
+            }
+        },
+        {
             "name": "drupal/seo_checklist",
             "version": "4.0.0",
             "source": {
@@ -4735,8 +4828,9 @@
         "drupal/redirect": 10,
         "drupal/devel": 5,
         "drupal/config_split": 10,
-        "drupal/reference_access": 15,
-        "drupal/bootstrap_layouts": 20
+        "drupal/bootstrap_layouts": 20,
+        "drupal/content_access": 20,
+        "drupal/acl": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,

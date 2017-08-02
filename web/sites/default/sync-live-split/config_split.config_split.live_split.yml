@@ -53,6 +53,7 @@ blacklist:
   - contact.form.feedback
   - contact.form.personal
   - contact.settings
+  - content_access.settings
   - core.base_field_override.node.page.promote
   - core.date_format.fallback
   - core.date_format.html_date
