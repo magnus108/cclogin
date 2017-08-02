@@ -17,7 +17,21 @@ expression:
   conditions:
     id: rules_and
     uuid: d1df30d9-d703-4b4c-986a-6474a1fb4b8a
-    conditions: {  }
+    conditions:
+      -
+        id: rules_condition
+        uuid: 9f224470-0357-4abe-8b05-e3d51b4f2bb5
+        context_values:
+          types:
+            - group
+        context_mapping:
+          node: node
+        context_processors:
+          types:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        condition_id: rules_node_is_of_type
+        negate: false
   actions:
     id: rules_action_set
     uuid: fa9dfa5e-d2ae-4950-8c1b-835c7b85d4d3

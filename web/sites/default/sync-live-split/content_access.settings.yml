@@ -5,4 +5,4 @@ content_access_roles_gids:
 _core:
   default_config_hash: 7LkiviGITIpniIOOIzpuxR7r4XzqqYN_cwu0fb0kx1M
 content_access_node_type:
-  group: 'a:2:{s:4:"view";a:1:{i:0;s:13:"administrator";}s:8:"view_own";a:1:{i:0;s:13:"administrator";}}'
+  group: 'a:4:{s:4:"view";a:1:{i:0;s:13:"administrator";}s:8:"view_own";a:2:{i:0;s:13:"authenticated";i:1;s:13:"administrator";}s:8:"per_node";i:1;s:8:"priority";s:1:"1";}'

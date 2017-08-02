@@ -195,6 +195,7 @@ blacklist:
   - system.file
   - system.image
   - system.image.gd
+  - system.logging
   - system.mail
   - system.maintenance
   - system.menu.account

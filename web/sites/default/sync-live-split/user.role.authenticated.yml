@@ -14,6 +14,8 @@ permissions:
   - 'access shortcuts'
   - 'access site-wide contact form'
   - 'bypass all checks'
+  - 'delete own group content'
+  - 'edit own group content'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
