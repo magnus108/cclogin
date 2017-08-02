@@ -1,0 +1,24 @@
+uuid: 4377f8e1-4131-480c-91db-edbcf6269c49
+langcode: en
+status: true
+dependencies: {  }
+id: group_access
+label: 'Group access'
+events:
+  -
+    event_name: 'rules_entity_view:node'
+description: ''
+tags:
+  - access
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 0ea5e2f5-68ec-4535-941a-db082b1c1a2d
+  conditions:
+    id: rules_and
+    uuid: d1df30d9-d703-4b4c-986a-6474a1fb4b8a
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: fa9dfa5e-d2ae-4950-8c1b-835c7b85d4d3
+    actions: {  }

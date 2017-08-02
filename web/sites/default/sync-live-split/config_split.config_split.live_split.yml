@@ -162,6 +162,7 @@ blacklist:
   - redirect.settings
   - redirect_404.settings
   - redirect_domain.domains
+  - rules.reaction.group_access
   - rules.settings
   - search.page.node_search
   - search.page.user_search
