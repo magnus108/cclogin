@@ -161,7 +161,6 @@ blacklist:
   - redirect.settings
   - redirect_404.settings
   - redirect_domain.domains
-  - reference_access.config
   - search.page.node_search
   - search.page.user_search
   - search.settings
