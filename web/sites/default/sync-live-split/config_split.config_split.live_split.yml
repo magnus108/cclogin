@@ -169,6 +169,7 @@ blacklist:
   - search.settings
   - seven.settings
   - shortcut.set.default
+  - smtp.settings
   - system.action.comment_publish_action
   - system.action.comment_save_action
   - system.action.comment_unpublish_action

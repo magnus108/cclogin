@@ -20,7 +20,8 @@
         "drupal/bootstrap_layouts": "5.x-dev",
         "drupal/content_access": "1.x-dev",
         "drupal/rules": "^3.0@alpha",
-        "drupal/acl": "1.0.0-alpha1"
+        "drupal/acl": "1.0.0-alpha1",
+        "drupal/smtp": "^1.0@beta"
     },
     "authors": [
         {

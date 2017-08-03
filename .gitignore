@@ -2,3 +2,4 @@
 .drush/
 .composer/
 web/sites/default/files/
+web/sites/default/sync-live-split/smtp.settings.yml
