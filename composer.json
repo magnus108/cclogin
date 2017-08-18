@@ -5,7 +5,7 @@
     "prefer-stable" : true,
     "require": {
         "composer/installers": "^1.2",
-        "drupal/core": "^8.3",
+        "drupal/core": "^8.0",
         "drush/drush": "^8.1",
         "drupal/redirect": "^1.0@beta",
         "drupal/metatag": "^1.0",
@@ -21,7 +21,8 @@
         "drupal/content_access": "1.x-dev",
         "drupal/rules": "^3.0@alpha",
         "drupal/acl": "1.0.0-alpha1",
-        "drupal/smtp": "^1.0@beta"
+        "drupal/smtp": "^1.0@beta",
+        "drupal/cas_server": "^1.0@beta"
     },
     "authors": [
         {
