@@ -31,7 +31,7 @@ RUN wget -qO- https://getcomposer.org/installer | php -- --install-dir=/usr/loca
 USER www-data
 ENV HOME=/var/www/html
 
-COPY composer.json composer.lock $HOME/
+COPY composer.json $HOME/
 RUN composer install
 
 COPY web $HOME/
