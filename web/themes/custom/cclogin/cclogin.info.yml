@@ -1,0 +1,5 @@
+name: cclogin
+type: theme
+description: This is a subtheme for cclogn
+core: 8.x
+base theme: bootstrap

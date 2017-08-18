@@ -64,7 +64,7 @@ $config['system.performance']['js']['preprocess'] = FALSE;
  *
  * Do not use this setting until after the site is installed.
  */
-# $settings['cache']['bins']['render'] = 'cache.backend.null';
+$settings['cache']['bins']['render'] = 'cache.backend.null';
 
 /**
  * Disable Dynamic Page Cache.
@@ -73,7 +73,7 @@ $config['system.performance']['js']['preprocess'] = FALSE;
  * cacheability metadata is present (and hence the expected behavior). However,
  * in the early stages of development, you may want to disable it.
  */
-# $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
+$settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
 
 /**
  * Allow test modules and themes to be installed.
@@ -92,7 +92,7 @@ $config['system.performance']['js']['preprocess'] = FALSE;
  * be gained by generating a query string from rebuild_token_calculator.sh and
  * using these parameters in a request to rebuild.php.
  */
-# $settings['rebuild_access'] = FALSE;
+$settings['rebuild_access'] = TRUE;
 
 /**
  * Skip file system permissions hardening.
@@ -104,4 +104,4 @@ $config['system.performance']['js']['preprocess'] = FALSE;
  * user pulling in the changes won't have permissions to modify files in the
  * directory.
  */
-# $settings['skip_permissions_hardening'] = TRUE;
+$settings['skip_permissions_hardening'] = TRUE;

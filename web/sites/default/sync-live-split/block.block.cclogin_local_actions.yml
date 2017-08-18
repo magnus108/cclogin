@@ -1,0 +1,20 @@
+uuid: 71fac59c-e638-450d-916c-d5e3c9011d51
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cclogin
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: cclogin_local_actions
+theme: cclogin
+region: header
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

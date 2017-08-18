@@ -1,0 +1,22 @@
+uuid: 6813ee2d-467f-459c-967f-624d9262c9cd
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - cclogin
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: cclogin_help
+theme: cclogin
+region: help
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

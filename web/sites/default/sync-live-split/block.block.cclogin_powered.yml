@@ -1,0 +1,22 @@
+uuid: 96874df4-8c3d-4465-ae3e-626271d71703
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - cclogin
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: cclogin_powered
+theme: cclogin
+region: footer
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

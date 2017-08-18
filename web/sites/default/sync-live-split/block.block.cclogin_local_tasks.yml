@@ -1,0 +1,22 @@
+uuid: 986819a3-d89d-475c-9514-8c150488e98e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cclogin
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: cclogin_local_tasks
+theme: cclogin
+region: header
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

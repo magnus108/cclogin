@@ -37,6 +37,20 @@ blacklist:
   - block.block.bootstrap_powered
   - block.block.bootstrap_search
   - block.block.bootstrap_tools
+  - block.block.cclogin_account_menu
+  - block.block.cclogin_branding
+  - block.block.cclogin_breadcrumbs
+  - block.block.cclogin_content
+  - block.block.cclogin_footer
+  - block.block.cclogin_help
+  - block.block.cclogin_local_actions
+  - block.block.cclogin_local_tasks
+  - block.block.cclogin_main_menu
+  - block.block.cclogin_messages
+  - block.block.cclogin_page_title
+  - block.block.cclogin_powered
+  - block.block.cclogin_search
+  - block.block.cclogin_tools
   - block.block.seven_breadcrumbs
   - block.block.seven_content
   - block.block.seven_help
@@ -48,6 +62,7 @@ blacklist:
   - block.block.seven_secondary_local_tasks
   - block_content.type.basic
   - bootstrap.settings
+  - cclogin.settings
   - comment.type.comment
   - config_split.config_split.live_split
   - contact.form.feedback

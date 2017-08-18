@@ -1,0 +1,22 @@
+uuid: 144ca1e1-6dc0-489e-92fc-3801c50f8524
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cclogin
+_core:
+  default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
+id: cclogin_messages
+theme: cclogin
+region: header
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

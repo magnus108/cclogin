@@ -1,0 +1,22 @@
+uuid: 9e6bcf85-85ca-4975-9234-66b2c5cf9fcf
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cclogin
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: cclogin_content
+theme: cclogin
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
