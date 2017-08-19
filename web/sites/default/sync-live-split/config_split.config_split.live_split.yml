@@ -175,7 +175,6 @@ blacklist:
   - rdf.mapping.taxonomy_term.tags
   - rdf.mapping.user.user
   - redirect.settings
-  - redirect_404.settings
   - redirect_domain.domains
   - rules.reaction.group_access
   - rules.settings
@@ -246,7 +245,6 @@ blacklist:
   - views.view.frontpage
   - views.view.glossary
   - views.view.redirect
-  - views.view.redirect_404
   - views.view.taxonomy_term
   - views.view.user
   - views.view.users_in_group
